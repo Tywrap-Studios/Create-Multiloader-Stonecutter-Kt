@@ -35,12 +35,13 @@ what is safe to remove).
 
 ## Build tools usage
 
-To start current active version use the `runActive` task
-
-For testing all versions you can use `chiseledRunAllClients`, it runs all possible version and loader variants.
+To start the client for a version, go to its folder and run the 
+`runClient` task.
 
 The template also has the publishing plugin. You can configure it as needed.
-After configuration, you can use the `chiseledPublishMods` task.
+After configuration, you can use the root `publishMods` task, which will
+publish everything at once. If you want to publish versions separately,
+then do it via their respective Gradle folders.
 
 ## Template usage
 
